@@ -1,3 +1,5 @@
+// https://medium.freecodecamp.org/securing-node-js-restful-apis-with-json-web-tokens-9f811a92bb52
+
 var app = require('./app');
 var port = process.env.PORT || 3000;
 
