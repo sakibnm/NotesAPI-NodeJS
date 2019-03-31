@@ -44,9 +44,9 @@ router.get('/me', VerifyToken, function(req, res, next) {
     });
 });
 
-router.use((user, req, res, next)=>{
-  res.status(200).send("user"); 
-});
+// router.use((user, req, res, next)=>{
+//   res.status(200).send("user"); 
+// });
 
 router.post('/login', function(req, res) {
     User.findOne({ email: req.body.email }, function (err, user) {
