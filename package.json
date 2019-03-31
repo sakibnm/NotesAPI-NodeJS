@@ -1,0 +1,27 @@
+{
+  "name": "notesapi-nodejs",
+  "version": "1.0.0",
+  "description": "Cloned from Git @adnanRahic",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sakibnm/NotesAPI-NodeJS.git"
+  },
+  "author": "sakib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sakibnm/NotesAPI-NodeJS/issues"
+  },
+  "homepage": "https://github.com/sakibnm/NotesAPI-NodeJS#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.20"
+  }
+}
