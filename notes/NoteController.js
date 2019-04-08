@@ -27,7 +27,7 @@ router.get('/get', VerifyToken, (req, res, next)=>{
                 if(err) return res.status(500).send({ findnote: false, message:"There was a problem finding the note."});
                 if(!note) return res.status(404).send({ findnote: false, message:"No note found."});
                 if (note.userId == req.userId){
-                    res.status(200).send({ getnote: false, note: note});
+                    res.status(200).send({ getnote: true, note: note});
                 }else{
                     res.status(405).send({ getnote: false, message:"This is not your note."});
                 }
