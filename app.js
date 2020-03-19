@@ -1,14 +1,12 @@
-var express = require('express');
+import express from 'express';
+import UserController from './user/UserController';
+import AuthController from './auth/AuthController';
+import NoteController from './notes/NoteController';
+
 var app = express();
-var db = require('./db');
 
-var UserController = require('./user/UserController');
 app.use('/users', UserController);
-
-var AuthController = require('./auth/AuthController');
 app.use('/api/auth', AuthController);
-
-var NoteController = require('./notes/NoteController');
 app.use('/api/note', NoteController);
 
-module.exports = app;
+export default app;
