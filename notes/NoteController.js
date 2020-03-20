@@ -99,7 +99,7 @@ router.post('/post', VerifyToken, (req, res, next)=>{
     });
 });
 
-router.get('/delete', VerifyToken, (req, res, next)=>{
+router.post('/delete', VerifyToken, (req, res, next)=>{
     var token = req.headers['x-access-token'];
     var msgID = req.body.id;
     if (!token) return res.status(401).send({ auth: false, message: 'No token provided.' });
